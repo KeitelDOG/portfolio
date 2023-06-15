@@ -15,16 +15,16 @@ import {
   UtilityList,
   UtilityListItem,
   Img,
-  NoLink,
 } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
+import prjs from '../../data/projects';
 
 function Projects(props) {
   const { projects } = props;
   return (
     <Section id="projects">
       <SectionDivider />
-      <SectionTitle main>Projects</SectionTitle>
+      <SectionTitle main>Projects (added: {prjs.length})</SectionTitle>
       <GridContainer>
         {projects.map(project => {
           const specs = `${project.year} - ${project.side} [${project.type}]`;
@@ -52,22 +52,16 @@ function Projects(props) {
                 </div>
                 <UtilityList>
                   <UtilityListItem>
-                    {project.link ? (
+                    {project.link !== 'private' && (
                       <ExternalLinks href={project.link} target="_blank">Live Preview</ExternalLinks>
-                    ) : (
-                      <NoLink>No Live</NoLink>
                     )}
                   </UtilityListItem>
 
                   <UtilityListItem>
-
-                    {project.source === 'private' ? (
-                      <NoLink>private code</NoLink>
-                    ) : (
+                    {project.source !== 'private' && (
                       <ExternalLinks href={project.source} target="_blank">Source Code</ExternalLinks>
                     )}
                   </UtilityListItem>
-
                 </UtilityList>
               </BlogCard>
             </GridItem>

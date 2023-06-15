@@ -139,10 +139,41 @@ const nqueen = {
   type: 'challenge',
 };
 
+const connection = {
+  id: 5,
+  name: 'Royers Connection - Point of Sale System',
+  description: 'A Web Application Dashboard and API that allows configuration, products and stocks management for a Point OF Sale. Built with React, and NodeJS. I build the Dashboard and collaborate on API. A private project, only some Dev screenshots available.',
+  thumbnail: '/images/projects/5/thumbnail.png',
+  images: [
+    '/images/projects/5/connection-home.png',
+    '/images/projects/5/connection-pos.png',
+    '/images/projects/5/connection-pos-orders-list.png',
+    '/images/projects/5/connection-pos-stats.png',
+    '/images/projects/5/connection-product.png',
+  ],
+  stack: [6, 9, 11, 201],
+  skillIds: [1, 6, 9, 11, 101, 102, 104, 107, 201, 206, 207, 301, 302, 303, 304],
+  features: [
+    'Sign Up for approbation and Sign In',
+    'Get Global reports and statistics',
+    'Manage Categories',
+    'Manage Products',
+    'Manage Users',
+    'Place Order and proceed to payment',
+    'A mobile App was created by another team',
+  ],
+  source: 'private',
+  link: 'private',
+  year: 2020,
+  side: 'Full Stack',
+  type: 'project',
+};
+
 projects.push(megalobiz);
 projects.push(opine);
 projects.push(matchstick);
 projects.push(nqueen);
+projects.push(connection);
 
 // fill skills
 for (let i = 0; i < projects.length; i++) {

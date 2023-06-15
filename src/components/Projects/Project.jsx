@@ -19,7 +19,6 @@ import {
   TagList,
   UtilityList,
   UtilityListItem,
-  NoLink,
 } from './ProjectsStyles';
 
 function Project(props) {
@@ -76,18 +75,14 @@ function Project(props) {
 
         <UtilityList>
           <UtilityListItem>
-            {project.link ? (
-              <ExternalLinks href={project.link} target="_blank">Live Preview</ExternalLinks>
-            ) : (
-              <NoLink>No Live Preview</NoLink>
+            {project.link !== 'private' && (
+            <ExternalLinks href={project.link} target="_blank">Live Preview</ExternalLinks>
             )}
           </UtilityListItem>
 
           <UtilityListItem>
-            {project.source === 'private' ? (
-              <NoLink>private code</NoLink>
-            ) : (
-              <ExternalLinks href={project.source} target="_blank">Source Code</ExternalLinks>
+            {project.source !== 'private' && (
+            <ExternalLinks href={project.source} target="_blank">Source Code</ExternalLinks>
             )}
           </UtilityListItem>
         </UtilityList>

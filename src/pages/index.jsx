@@ -10,7 +10,7 @@ import { Section } from '../styles/GlobalComponents';
 import projectsData from '../data/projects';
 import skillsData from '../data/skills';
 
-const projects = projectsData.slice(0, 4);
+const projects = projectsData.slice(0, 6);
 
 const skillIds = skillsData.reduce((acc, skill) => {
   acc[skill.id] = skill;
