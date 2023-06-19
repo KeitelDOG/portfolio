@@ -17,6 +17,7 @@ const megalobiz = {
     '/images/projects/1/megalobiz-lrc-maker.png',
     '/images/projects/1/megalobiz-lrc-search.png',
     '/images/projects/1/megalobiz-ed-sheeran-photograph-lrc.png',
+    '/images/projects/1/megalobiz-top-visits.png',
   ],
   stack: [4, 14, 10, 201],
   skillIds: [4, 14, 1, 10, 101, 102, 108, 201, 205, 209, 301, 305, 308, 406],
@@ -147,6 +148,7 @@ const connection = {
   images: [
     '/images/projects/5/connection-home.png',
     '/images/projects/5/connection-pos.png',
+    '/images/projects/5/connection-pos-2.png',
     '/images/projects/5/connection-pos-orders-list.png',
     '/images/projects/5/connection-pos-stats.png',
     '/images/projects/5/connection-product.png',
@@ -169,8 +171,53 @@ const connection = {
   type: 'project',
 };
 
+// Givepower
+const givepower = {
+  id: 6,
+  name: 'Givepower - Ile de la Gonâve Watermaker',
+  description: 'A Server API that collects data for a System that makes water with Spectra device. The project was at La Gonâve island in Haiti, under the command of some US Engineers. I had to get data from:\n- 2 Spectra Watermakers\n- 10 Tesla Powerwall2\n- 6 SMA inverters.',
+  thumbnail: '/images/projects/6/thumbnail.png',
+  images: [
+    '/images/projects/6/givepower-spectra.png',
+    '/images/projects/6/givepower-syncing.png',
+    '/images/projects/6/givepower-schedule-code.png',
+    '/images/projects/6/givepower-db-sma.png',
+    '/images/projects/6/givepower-sma-endpoints-code.png',
+    '/images/projects/6/givepower-devices-1.jpg',
+    '/images/projects/6/givepower-devices-2.jpg',
+    '/images/projects/6/givepower-devices-3.jpg',
+    '/images/projects/6/givepower-devices-4.jpg',
+    '/images/projects/6/givepower-devices-5.jpg',
+    '/images/projects/6/givepower-devices-6.jpg',
+  ],
+  stack: [9, 11, 201],
+  skillIds: [1, 9, 11, 201, 206, 207, 301, 302, 303, 304],
+  features: [
+    'Local API is installed on local computer to collect data from LAN Devices',
+    'Online API is installed on Cloud Server to receive data and make it available to Givepower applications',
+    'Schedule system to fetch and push data from devices at a certain unique period for each type of device.',
+    'Special Achievement: Only Tesla devices had documented API. I had to hack web interface to find authentication and data endpoints, and Codes for each measurement in SMA which were not documented anywhere over the internet.',
+  ],
+  source: 'private',
+  link: 'private',
+  year: 2020,
+  side: 'Backend',
+  type: 'project',
+};
+
+// DGB - Bidje Peyim
+
+// SusTee
+
+// SxC
+
+// Pronap Mobile
+
+// Vision
+
 projects.push(megalobiz);
 projects.push(opine);
+projects.push(givepower);
 projects.push(matchstick);
 projects.push(nqueen);
 projects.push(connection);

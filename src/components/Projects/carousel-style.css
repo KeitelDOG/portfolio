@@ -4,3 +4,12 @@
 .carousel-root .carousel.carousel-slider {
   margin: 0 auto;
 }
+.carousel .slide div img {
+  width: auto;
+  max-height: 500px;
+}
+.carousel .slide div p {
+  bottom: unset;
+  top: 84%;
+  height: 36px;
+}

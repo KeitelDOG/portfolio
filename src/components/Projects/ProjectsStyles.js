@@ -110,7 +110,7 @@ margin-top: 2rem;
 
 export const Specs = styled.p`
   width: 100%;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.90);
   text-align: left;
   font-size: 2.1rem;
 `;
@@ -130,6 +130,8 @@ export const Feature = styled.li`
   margin-left: 16px;
   list-style-type: disc;
   font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.75);
 `;
 
 export const UtilityList = styled.ul`

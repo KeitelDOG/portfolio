@@ -41,12 +41,17 @@ function Project(props) {
 
         <CarouselSection>
           <Carousel dynamicHeight width={width}>
-            {project.images.map(image => (
-              <div key={image}>
-                <img src={image} alt={project.name} />
-                <p className="legend">{image}</p>
-              </div>
-            ))}
+            {project.images.map(image => {
+              // /images/projects/6/givepower-spectra.png
+              const filename = image.split('/').slice(-1)[0];
+              const imgDesc = filename.split('.')[0].split('-').join(' ');
+              return (
+                <div key={image}>
+                  <img src={image} alt={project.name} />
+                  <p className="legend">{imgDesc}</p>
+                </div>
+              );
+            })}
           </Carousel>
         </CarouselSection>
 
