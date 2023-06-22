@@ -30,7 +30,7 @@ export const CarouselContainer = styled.ul`
 `;
 export const CarouselMobileScrollNode = styled.div`
   display: flex;
-  min-width: ${({ final }) => (final ? '120%;' : 'min-content')}
+  min-width: ${({ final }) => (final ? '110%;' : 'min-content')};
 `;
 
 export const CarouselItem = styled.div`

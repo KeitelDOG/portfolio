@@ -17,6 +17,8 @@ const megalobiz = {
     '/images/projects/1/megalobiz-lrc-maker.png',
     '/images/projects/1/megalobiz-lrc-search.png',
     '/images/projects/1/megalobiz-ed-sheeran-photograph-lrc.png',
+    '/images/projects/1/megalobiz-lrc-sample.png',
+    '/images/projects/1/megalobiz-lrc-music-playing.png',
     '/images/projects/1/megalobiz-top-visits.png',
   ],
   stack: [4, 14, 10, 201],
@@ -54,7 +56,7 @@ const opine = {
     '/images/projects/2/opine-live-seeding.png',
   ],
   stack: [7, 8, 9, 11, 201],
-  skillIds: [1, 8, 6, 7, 9, 11, 101, 102, 107, 108, 201, 206, 207, 301, 302, 303, 304],
+  skillIds: [1, 8, 6, 7, 9, 11, 101, 102, 107, 108, 201, 206, 207, 301, 302, 303, 304, 309, 109],
   features: [
     'Submit and crawl URL to create a unique page for each Link',
     'URL can be submitted with "Share" option on mobile App.',
@@ -154,7 +156,7 @@ const connection = {
     '/images/projects/5/connection-product.png',
   ],
   stack: [6, 9, 11, 201],
-  skillIds: [1, 6, 9, 11, 101, 102, 104, 107, 201, 206, 207, 301, 302, 303, 304],
+  skillIds: [1, 6, 9, 11, 101, 102, 104, 107, 201, 206, 207, 301, 302, 303, 304, 309, 109],
   features: [
     'Sign Up for approbation and Sign In',
     'Get Global reports and statistics',
@@ -174,7 +176,7 @@ const connection = {
 // Givepower
 const givepower = {
   id: 6,
-  name: 'Givepower - Ile de la Gonâve Watermaker',
+  name: 'Givepower - La Gonâve island Watermaker',
   description: 'A Server API that collects data for a System that makes water with Spectra device. The project was at La Gonâve island in Haiti, under the command of some US Engineers. I had to get data from:\n- 2 Spectra Watermakers\n- 10 Tesla Powerwall2\n- 6 SMA inverters.',
   thumbnail: '/images/projects/6/thumbnail.png',
   images: [
@@ -189,6 +191,7 @@ const givepower = {
     '/images/projects/6/givepower-devices-4.jpg',
     '/images/projects/6/givepower-devices-5.jpg',
     '/images/projects/6/givepower-devices-6.jpg',
+    '/images/projects/6/givepower-la-gonâve-island-haiti.jpg',
   ],
   stack: [9, 11, 201],
   skillIds: [1, 9, 11, 201, 206, 207, 301, 302, 303, 304],
@@ -202,6 +205,38 @@ const givepower = {
   link: 'private',
   year: 2020,
   side: 'Backend',
+  type: 'project',
+};
+
+// SxC
+const sxc = {
+  id: 7,
+  name: 'SxC - Saving by Consumption',
+  description: 'A commercial system getting and offering foods at lower cost and sharing the savings with all parties, owners, sellers and buyers. The Application is used as a POS. I was responsible for Backend, and also the Offline selling and Online synchronization.',
+  thumbnail: '/images/projects/7/thumbnail.jpg',
+  images: [
+    '/images/projects/7/sxc-home.jpg',
+    '/images/projects/7/sxc-login.jpg',
+    '/images/projects/7/sxc-menu-drawer.jpg',
+    '/images/projects/7/sxc-member-qualification.jpg',
+    '/images/projects/7/sxc-member-details.jpg',
+    '/images/projects/7/sxc-members-list.jpg',
+    '/images/projects/7/sxc-stock-adding.jpg',
+    '/images/projects/7/sxc-swagger-codes.jpg',
+  ],
+  stack: [13, 4, 14, 10, 201],
+  skillIds: [13, 2, 4, 14, 201, 209, 301, 305, 308, 309, 109, 406],
+  features: [
+    'Database and API was first on Backendless, and featured Backendless Server Code',
+    'Server with Laravel/PHP and MySQL with Swagger API Documentation',
+    'Offline selling for a Seller and synchronization any time later',
+    'Qualification process with Questions/Answers for Member',
+    'Login with phone and password',
+  ],
+  source: 'private',
+  link: 'private',
+  year: 2018,
+  side: 'Full Stack',
   type: 'project',
 };
 
@@ -220,6 +255,7 @@ projects.push(opine);
 projects.push(givepower);
 projects.push(matchstick);
 projects.push(nqueen);
+projects.push(sxc);
 projects.push(connection);
 
 // fill skills

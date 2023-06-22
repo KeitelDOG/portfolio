@@ -73,7 +73,7 @@ function Technologies(props) {
           );
         })}
       </List>
-      <SectionDivider colorAlt />
+      <SectionDivider />
     </Section>
   );
 }

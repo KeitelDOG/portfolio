@@ -36,16 +36,16 @@ function Timeline() {
     e.preventDefault();
 
     if (carouselRef.current) {
-      const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / achievements.length));
-
+      const itemWidth = carouselRef.current.childNodes[0].offsetWidth;
+      const scrollLeft = Math.floor(itemWidth * i);
       scroll(carouselRef.current, scrollLeft);
     }
   };
 
   const handleScroll = () => {
     if (carouselRef.current) {
-      const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * achievements.length);
-
+      const itemWidth = carouselRef.current.childNodes[0].offsetWidth;
+      const index = Math.floor(carouselRef.current.scrollLeft / itemWidth);
       setActiveItem(index);
     }
   };
@@ -64,18 +64,18 @@ function Timeline() {
     <Section id="about">
       <SectionTitle>My Journey</SectionTitle>
       <SectionText>
-        Although I was passionate about the idea of programming since 17 yo, it was only in 2010 that I finally got the chance to learn to code by myself. Later I found myself implementing exact algorithms that were already in my mind since 10 years ago.
+        Although I was passionate about the idea of programming since 17 yo, it was only in 2010 that I finally got the chance to learn to code by myself. Later I found myself implementing algorithms that were already in my mind since 10 years ago.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {achievements.map((achievement, index) => (
             <CarouselMobileScrollNode
-              key={index}
+              key={achievement.id}
               final={index === TOTAL_CAROUSEL_COUNT - 1}
             >
               <CarouselItem
                 index={index}
-                id={`carousel__item-${index}`}
+                id={`carousel_item-${index}`}
                 active={activeItem}
                 onClick={(e) => handleClick(e, index)}
               >
