@@ -41,7 +41,7 @@ const megalobiz = {
 const opine = {
   id: 2,
   name: 'Opine - Boundless Opinion',
-  description: 'A website that allows people to opine on most Web Pages, like Article, Blog, Services and Media pages. Built with React Native, React Native Web and NextJS with Responsive Design in mind.',
+  description: '[Project in development]\nA website that allows people to opine on most Web Pages, like Articles, Blogs, Services and Media pages. Built with React Native, React Native Web and NextJS with Responsive Design in mind.',
   thumbnail: '/images/projects/2/thumbnail.png',
   images: [
     '/images/projects/2/opine-home.png',
@@ -82,17 +82,17 @@ const matchstick = {
   description: 'A Web App challenge where you enter an equation string like:\n3 + 9 = 5\nand that calculates all solutions with Move, Add or Remove operations.\n(moving 1 stick):\n3 + 3 = 6',
   thumbnail: '/images/projects/3/thumbnail.png',
   images: [
-    '/images/projects/3/matchstick-eq-1.png',
-    '/images/projects/3/matchstick-eq-2.png',
-    '/images/projects/3/matchstick-eq-3.png',
-    '/images/projects/3/matchstick-eq-4.png',
-    '/images/projects/3/matchstick-eq-5.png',
-    '/images/projects/3/matchstick-eq-6.png',
-    '/images/projects/3/matchstick-eq-7.png',
-    '/images/projects/3/matchstick-eq-8.png',
-    '/images/projects/3/matchstick-eq-9.png',
-    '/images/projects/3/matchstick-eq-10.png',
-    '/images/projects/3/matchstick-eq-11.png',
+    '/images/projects/3/matchstick-equation-1.png',
+    '/images/projects/3/matchstick-equation-2.png',
+    '/images/projects/3/matchstick-equation-3.png',
+    '/images/projects/3/matchstick-equation-4.png',
+    '/images/projects/3/matchstick-equation-5.png',
+    '/images/projects/3/matchstick-equation-6.png',
+    '/images/projects/3/matchstick-equation-7.png',
+    '/images/projects/3/matchstick-equation-8.png',
+    '/images/projects/3/matchstick-equation-9.png',
+    '/images/projects/3/matchstick-equation-10.png',
+    '/images/projects/3/matchstick-equation-11.png',
   ],
   stack: [12, 8, 6, 101, 102],
   skillIds: [1, 12, 8, 6, 101, 102, 108, 301],
@@ -224,8 +224,8 @@ const sxc = {
     '/images/projects/7/sxc-stock-adding.jpg',
     '/images/projects/7/sxc-swagger-codes.jpg',
   ],
-  stack: [13, 4, 14, 10, 201],
-  skillIds: [13, 2, 4, 14, 201, 209, 301, 305, 308, 309, 109, 406],
+  stack: [13, 4, 14, 10, 201, 212],
+  skillIds: [13, 2, 4, 14, 201, 209, 211, 212, 301, 305, 308, 309, 109, 406],
   features: [
     'Database and API was first on Backendless, and featured Backendless Server Code',
     'Server with Laravel/PHP and MySQL with Swagger API Documentation',
@@ -240,7 +240,66 @@ const sxc = {
   type: 'project',
 };
 
+// Portfolio
+const portfolio = {
+  id: 8,
+  project_id: 8,
+  name: 'Portfolio - Keitel Jovin',
+  description: 'A portfolio that I am using to present myself and the projects I have worked in a direct and visual way, with related skills, features and pictures.',
+  thumbnail: '/images/projects/8/thumbnail.png',
+  images: [
+    '/images/projects/8/portfolio-hero.png',
+    '/images/projects/8/portfolio-projects.png',
+    '/images/projects/8/portfolio-project-opine.png',
+    '/images/projects/8/portfolio-skills.png',
+    '/images/projects/8/portfolio-timeline.png',
+  ],
+  stack: [12, 8, 6, 101, 102],
+  skillIds: [1, 12, 8, 6, 101, 102, 301],
+  features: [
+    'A Summary about myself',
+    'Projects, skills, achievements and accomplishments data are hardcoded',
+    'Page listing for Projects and Skills',
+    'Page for specific Project and specific Skill',
+    'Each Project is related to multiple skills used in it',
+    'Social Network link for additional informations',
+    'Contact informations to keep in touch any time',
+    'Template used and modified for my needs: https://reactjsexample.com/a-portfolio-built-in-react-and-nextjs/',
+  ],
+  source: 'https://github.com/KeitelDOG/portfolio',
+  link: 'https://portfolio-keiteldog.vercel.app/',
+  year: 2023,
+  side: 'Frontend',
+  type: 'portfolio',
+};
+
 // DGB - Bidje Peyim
+const dgb = {
+  id: 9,
+  project_id: 8,
+  name: 'DGB - Direction Générale du Budget',
+  description: 'An Application that aims at presenting Budgets for some Haitian governmental projects to show transparency. I was responsible for the Web App.',
+  thumbnail: '/images/projects/9/thumbnail.png',
+  images: [
+    '/images/projects/9/dgb-home.png',
+    '/images/projects/9/dbg-home-collapsed.png',
+    '/images/projects/9/dgb-mobile.png',
+    '/images/projects/9/dgb-stats.png',
+  ],
+  stack: [8, 6, 101, 102],
+  skillIds: [1, 12, 8, 6, 101, 102, 301],
+  features: [
+    'A Home page that show global statistics and latest articles on budget',
+    'Manage and show budget related articles with picture upload',
+    'Budgets Documents are showed and can be downloaded',
+    'Report section provide many kind of statistics data and vizualizations',
+  ],
+  source: 'private',
+  link: 'private',
+  year: 2020,
+  side: 'Frontend',
+  type: 'project',
+};
 
 // SusTee
 
@@ -257,6 +316,8 @@ projects.push(matchstick);
 projects.push(nqueen);
 projects.push(sxc);
 projects.push(connection);
+projects.push(dgb);
+projects.push(portfolio);
 
 // fill skills
 for (let i = 0; i < projects.length; i++) {

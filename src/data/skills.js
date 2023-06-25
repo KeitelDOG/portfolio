@@ -17,6 +17,7 @@ import {
   SiCss3,
   SiCplusplus,
   SiMysql,
+  SiSqlite,
   SiWebpack,
   SiBabel,
   SiMaterialdesign,
@@ -221,8 +222,18 @@ let dbs = [
   },
   {
     id: 210,
-    name: 'AWS Elastic Beanstalk',
-    icon: SiAmazonaws,
+    name: 'DBFlow',
+    icon: BsDatabaseFill,
+  },
+  {
+    id: 211,
+    name: 'ActiveAndroid',
+    icon: BsDatabaseFill,
+  },
+  {
+    id: 212,
+    name: 'SQLite',
+    icon: SiSqlite,
   },
 ];
 dbs = mapType(dbs, 'Database & ORM');
@@ -272,6 +283,11 @@ let tools = [
     id: 309,
     name: 'Open API',
     icon: SiOpenapiinitiative,
+  },
+  {
+    id: 310,
+    name: 'AWS Elastic Beanstalk',
+    icon: SiAmazonaws,
   },
 ];
 tools = mapType(tools, 'Tools & DevOps');

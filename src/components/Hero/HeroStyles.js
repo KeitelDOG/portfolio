@@ -20,12 +20,13 @@ export const LeftSection = styled.div`
 `;
 
 export const UserAvatar = styled.img`
-  margin: 0 10px 10px 0;
+  margin: 0 16px 10px 0;
   float: left;
   width: 205px;
   height: 205px;
+  border-radius: 50%;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 170px;
-  height: 170px;
+    height: 170px;
   }
 `;
