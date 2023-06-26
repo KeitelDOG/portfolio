@@ -276,7 +276,6 @@ const portfolio = {
 // DGB - Bidje Peyim
 const dgb = {
   id: 9,
-  project_id: 8,
   name: 'DGB - Direction Générale du Budget',
   description: 'An Application that aims at presenting Budgets for some Haitian governmental projects to show transparency. I was responsible for the Web App.',
   thumbnail: '/images/projects/9/thumbnail.png',
@@ -301,9 +300,47 @@ const dgb = {
   type: 'project',
 };
 
-// SusTee
-
-// SxC
+// SusT
+const sust = {
+  id: 10,
+  name: 'SusT - Sustainable Search Engine',
+  description: 'A website that provides ideas, solutions and activities that aim to promote projects related to a natural and organic environment. People can post their individual project, organization or business as link.',
+  thumbnail: '/images/projects/10/thumbnail.png',
+  images: [
+    '/images/projects/10/sust-home.png',
+    '/images/projects/10/sust-home-2.png',
+    '/images/projects/10/sust-home-3.png',
+    '/images/projects/10/sust-home-4.png',
+    '/images/projects/10/sust-search-results.png',
+    '/images/projects/10/sust-login.png',
+    '/images/projects/10/sust-register.png',
+    '/images/projects/10/sust-new-post-category.png',
+    '/images/projects/10/sust-new-post-info.png',
+    '/images/projects/10/sust-new-post-plan.png',
+    '/images/projects/10/sust-new-post-billing.png',
+    '/images/projects/10/sust-new-post-billing-confirmation.png',
+    '/images/projects/10/sust-new-post-trial.png',
+    '/images/projects/10/sust-posts-management.png',
+    '/images/projects/10/sust-post-invoice.png',
+    '/images/projects/10/sust-post-chart.png',
+    '/images/projects/10/sust-deployment.png',
+  ],
+  stack: [6, 8, 9, 11, 201],
+  skillIds: [1, 8, 6, 9, 11, 101, 102, 108, 201, 206, 207, 301, 302, 303, 304, 309, 109],
+  features: [
+    'Home page have search input and is similar to landing page',
+    'Can display search results on posted links',
+    'User can post a new link by entering info and chose a paid or trial plan to promote it',
+    'Search existing Links with keywords',
+    'Register and Login',
+    'User can see Campaign informations, Statistics chart and Invoice from posted links',
+  ],
+  source: 'private',
+  link: 'private',
+  year: 2020,
+  side: 'Full Stack',
+  type: 'project',
+};
 
 // Pronap Mobile
 
@@ -317,6 +354,7 @@ projects.push(nqueen);
 projects.push(sxc);
 projects.push(connection);
 projects.push(dgb);
+projects.push(sust);
 projects.push(portfolio);
 
 // fill skills
