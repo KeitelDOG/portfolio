@@ -52,8 +52,11 @@ const opine = {
     '/images/projects/2/opine-mobile-reply.png',
     '/images/projects/2/opine-mobile-drawer.png',
     '/images/projects/2/opine-dashboard.png',
-    '/images/projects/2/opine-mobile-sharing.png',
     '/images/projects/2/opine-live-seeding.png',
+    '/images/projects/2/opine-mobile-sharing.png',
+    '/images/projects/2/opine-jest-unit-test-like.png',
+    '/images/projects/2/opine-jest-unit-test-comment-input-web.png',
+    '/images/projects/2/opine-jest-unit-test-emoji-picker.png',
   ],
   stack: [7, 8, 9, 11, 201],
   skillIds: [1, 8, 6, 7, 9, 11, 101, 102, 107, 108, 201, 206, 207, 301, 302, 303, 304, 309, 109],
@@ -323,6 +326,7 @@ const sust = {
     '/images/projects/10/sust-posts-management.png',
     '/images/projects/10/sust-post-invoice.png',
     '/images/projects/10/sust-post-chart.png',
+    '/images/projects/10/sust-swagger.png',
     '/images/projects/10/sust-deployment.png',
   ],
   stack: [6, 8, 9, 11, 201],
@@ -345,6 +349,40 @@ const sust = {
 // Pronap Mobile
 
 // Vision
+const vision = {
+  id: 11,
+  name: 'Vision - Manage orders for Canvas Painting Art Composition',
+  description: 'A Dashboard that allows a group of artists to keep an eye and manage multiple orders from clients that would ask for all kind of Canvas painting art composition.',
+  thumbnail: '/images/projects/11/thumbnail.png',
+  images: [
+    '/images/projects/11/vision-login.png',
+    '/images/projects/11/vision-client-management.png',
+    '/images/projects/11/vision-client-page.png',
+    '/images/projects/11/vision-new-order.png',
+    '/images/projects/11/vision-orders-list.png',
+    '/images/projects/11/vision-order-details.png',
+    '/images/projects/11/vision-order-details-2.png',
+    '/images/projects/11/vision-order-payments.png',
+    '/images/projects/11/vision-stats.png',
+  ],
+  stack: [13, 4, 14, 10, 201, 212],
+  skillIds: [13, 2, 4, 14, 201, 209, 211, 212, 301, 305, 308, 309, 109, 406],
+  features: [
+    'Server and API with Node, Express and MySQL with Swagger API Documentation',
+    'Login with username and password',
+    'Manage Client that makes orders',
+    'Manage Order with client and Canvas painting informations like size, price, mesh type, etc.',
+    'Change status for orders',
+    'Attach an Employee to an order with a cost to create and deliver the painting',
+    'Manage payments for an Order',
+    'Show global Statistics and Charts in Dashboard',
+  ],
+  source: 'private',
+  link: 'private',
+  year: 2020,
+  side: 'Full Stack',
+  type: 'project',
+};
 
 projects.push(megalobiz);
 projects.push(opine);
@@ -355,6 +393,7 @@ projects.push(sxc);
 projects.push(connection);
 projects.push(dgb);
 projects.push(sust);
+projects.push(vision);
 projects.push(portfolio);
 
 // fill skills
