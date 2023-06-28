@@ -25,14 +25,6 @@ function Project(props) {
   const { project } = props;
   const specs = `${project.year} - ${project.side} [${project.type}]`;
 
-  const sizes = {
-    1: 820,
-    2: 820,
-    3: 520,
-    4: 480,
-  };
-  const width = sizes[project.id] || 720;
-
   return (
     <Page>
       <ProjectPageContainer>
@@ -40,7 +32,7 @@ function Project(props) {
         <Hr />
 
         <CarouselSection>
-          <Carousel dynamicHeight width={width}>
+          <Carousel dynamicHeight>
             {project.images.map(image => {
               // /images/projects/6/givepower-spectra.png
               const filename = image.split('/').slice(-1)[0];

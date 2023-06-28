@@ -127,9 +127,10 @@ export const LinkList = styled.ul`
     gap: 16px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
+    grid-template-columns: repeat(1, minmax(85px, 100%));
     width: 100%;
     padding: 32px 4px 16px;
-    gap: 5px;
+    gap: 16px;
   }
 `;
 

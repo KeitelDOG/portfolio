@@ -38,7 +38,7 @@ export const BlogCard = styled.div`
 `;
 
 export const ProjectPageContainer = styled.div`
-  padding: 32px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
