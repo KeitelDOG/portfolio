@@ -62,13 +62,15 @@ const opine = {
   skillIds: [1, 8, 6, 7, 9, 11, 101, 102, 107, 108, 201, 206, 207, 301, 302, 303, 304, 309, 109],
   features: [
     'Submit and crawl URL to create a unique page for each Link',
+    'Follow canonical URL to avoid duplicate links leading to opinions being scattered',
     'URL can be submitted with "Share" option on mobile App.',
-    'Search existing Links with keywords',
+    'Search existing Links with keywords like a mini search engine',
     'Sign Up and Sign In',
     'Like or Dislike a Link',
     'Comment on a Link',
     'Mention people who already commented',
     'Add emojis in your comment',
+    'Get notified when people like or reply to your comments, or mention you',
     'Browse recent History',
     'Consume Link Feeds',
   ],
@@ -346,8 +348,6 @@ const sust = {
   type: 'project',
 };
 
-// Pronap Mobile
-
 // Vision
 const vision = {
   id: 11,
@@ -384,6 +384,52 @@ const vision = {
   type: 'project',
 };
 
+// Pronap Mobile
+const pronap = {
+  id: 12,
+  name: 'Pronap - Secure Mobile Payment',
+  description: 'Pronap Mobile application is a Hackaton Proof Of Concept (POC) that allows people with smartphone to make and receive Payment from Debit Card to Bank Account with BRH (Central Bank of Haiti)',
+  thumbnail: '/images/projects/12/thumbnail.png',
+  images: [
+    '/images/projects/12/pronap-login.png',
+    '/images/projects/12/pronap-login-scroll.png',
+    '/images/projects/12/pronap-drawer-view.png',
+    '/images/projects/12/pronap-floating-action-buttons.png',
+    '/images/projects/12/pronap-new-debit-card.png',
+    '/images/projects/12/pronap-1-debit-card.png',
+    '/images/projects/12/pronap-2-debit-cards.png',
+    '/images/projects/12/pronap-new-bank-account.png',
+    '/images/projects/12/pronap-1-bank-account.png',
+    '/images/projects/12/pronap-new-product.png',
+    '/images/projects/12/pronap-product-qrcode.png',
+    '/images/projects/12/pronap-new-payment.png',
+    '/images/projects/12/pronap-scan-product-qrcode.png',
+    '/images/projects/12/pronap-payment-chose-card-1.png',
+    '/images/projects/12/pronap-payment-chose-card-2.png',
+    '/images/projects/12/pronap-payment-confirm-with-pin.png',
+  ],
+  stack: [13, 2, 212],
+  skillIds: [13, 2, 212, 210, 301],
+  features: [
+    '[App is not a Prototype, but only a Proof Of Concept (POC) from a Hackaton FinTech 2018]',
+    'User login with an email and a password that protect access',
+    'SQLite database is local and is encrypted with SQLCipher, a security extension to the SQLite database',
+    'User can add multiple Debit Cards in the database',
+    'User can add multiple Bank Accounts in the database',
+    'Cards and Bank Accounts informations are encrypted and numbers are 80% hidden',
+    'User can create a new product or service to sell, attached to a Bank Account',
+    'User can generate a QR Code for product',
+    'User can start a new Payment and scan for product QR Code',
+    'User can select which Card to buy with and confirm the payment',
+    'User must enter the Debit Card PIN from USSD and an SMS will be sent to receiver phone and complete the transaction',
+  ],
+  source: 'private',
+  link: 'private',
+  year: 2018,
+  side: 'Frontend',
+  type: 'Proof Of Concept',
+};
+
 projects.push(megalobiz);
 projects.push(opine);
 projects.push(givepower);
@@ -391,6 +437,7 @@ projects.push(matchstick);
 projects.push(nqueen);
 projects.push(sxc);
 projects.push(connection);
+projects.push(pronap);
 projects.push(dgb);
 projects.push(sust);
 projects.push(vision);
