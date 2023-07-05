@@ -40,4 +40,11 @@ function Home() {
   );
 }
 
+export async function getServerSideProps(ctx) {
+  const seo = {
+    host: ctx.req.headers.host,
+  };
+  return { props: { seo } };
+}
+
 export default Home;

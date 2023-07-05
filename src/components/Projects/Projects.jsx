@@ -6,9 +6,7 @@ import {
   GridItem,
 } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import {
-  Container, Div1, Div2, Div3, NavLink, SocialIcons,
-} from '../Header/HeaderStyles';
+import { NavLink } from '../Header/HeaderStyles';
 
 import ProjectItem from './ProjectItem';
 import prjs from '../../data/projects';

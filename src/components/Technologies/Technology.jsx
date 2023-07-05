@@ -25,7 +25,7 @@ function Technology(props) {
         <ListContainer>
           <ListTitle>{skill.name}</ListTitle>
           <ListParagraph>
-            This skill is used one or more projects. Some projects might not be listed yet. For now, the total of added projects that use this skill is:
+            I used "{skill.name}" in one or more projects. Some projects might not be listed yet. For now, the total of added projects that use this skill is:
             {' '}
             {skillProjects.length}
             {' '}

@@ -18,8 +18,10 @@ export async function getServerSideProps(ctx) {
   const id = parseInt(ctx.query.id, 10);
   const skill = skills.filter(s => s.id === id)[0];
   const seo = {
-    title: `${skill.name} - Keitel Jovin`,
+    title: `${skill.name} Projects - Keitel Jovin`,
     desc: `${skill.name} is one of the skills I used in my projects.`,
+    imageUrl: '/images/skills-code.jpg',
+    host: ctx.req.headers.host,
   };
   return { props: { id, seo } };
 }
