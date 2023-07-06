@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
 
   const desc = seo.desc || description;
   let imageUrl = seo.imageUrl || '/images/keitel-jovin.jpg';
-  imageUrl = `${process.env.NEXT_PUBLIC_VERCEL_URL}${imageUrl}`;
+  imageUrl = `${process.env.NEXT_PUBLIC_HOST_URL}${imageUrl}`;
 
   return (
     <>
