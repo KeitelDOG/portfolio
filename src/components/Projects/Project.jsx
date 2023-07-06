@@ -32,7 +32,11 @@ function Project(props) {
         <Hr />
 
         <CarouselSection>
-          <Carousel dynamicHeight>
+          <Carousel
+            dynamicHeight
+            preventMovementUntilSwipeScrollTolerance
+            swipeScrollTolerance={50}
+          >
             {project.images.map(image => {
               // /images/projects/6/givepower-spectra.png
               const filename = image.split('/').slice(-1)[0];
