@@ -21,7 +21,6 @@ export async function getServerSideProps(ctx) {
     title: `${skill.name} Projects - Keitel Jovin`,
     desc: `${skill.name} is one of the skills I used in my projects.`,
     imageUrl: '/images/skills-code.jpg',
-    host: ctx.req.headers.host,
   };
   return { props: { id, seo } };
 }

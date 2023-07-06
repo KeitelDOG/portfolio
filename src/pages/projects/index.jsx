@@ -11,11 +11,10 @@ function ProjectsPage() {
   );
 }
 
-export async function getServerSideProps(ctx) {
+export async function getServerSideProps() {
   const seo = {
     title: 'My Projects - Keitel Jovin',
     imageUrl: projects[1].thumbnail,
-    host: ctx.req.headers.host,
   };
   return { props: { seo } };
 }

@@ -11,11 +11,10 @@ function SkillsPage() {
   );
 }
 
-export async function getServerSideProps(ctx) {
+export async function getServerSideProps() {
   const seo = {
     title: 'My Skills with their Projects - Keitel Jovin',
     imageUrl: '/images/skills-code.jpg',
-    host: ctx.req.headers.host,
   };
   return { props: { seo } };
 }

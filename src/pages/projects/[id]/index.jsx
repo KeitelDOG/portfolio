@@ -21,7 +21,6 @@ export async function getServerSideProps(ctx) {
     title: `${project.name} - Keitel Jovin`,
     desc: project.description,
     imageUrl: project.thumbnail,
-    host: ctx.req.headers.host,
   };
   return { props: { id, seo } };
 }

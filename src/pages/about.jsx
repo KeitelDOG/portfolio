@@ -19,11 +19,10 @@ function About() {
   );
 }
 
-export async function getServerSideProps(ctx) {
+export async function getServerSideProps() {
   const seo = {
     title: 'About Me - Keitel Jovin',
     desc: 'This is an introduction of myself, a timeline of what I accomplished by year and personal achievements globally.',
-    host: ctx.req.headers.host,
   };
   return { props: { seo } };
 }
