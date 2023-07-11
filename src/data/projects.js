@@ -154,7 +154,7 @@ const nqueen = {
     'Pause down a couple of seconds when a solution is found',
   ],
   source: 'https://github.com/KeitelDOG/n-queens',
-  link: 'https://matchstick.megalobiz-staging.com',
+  link: 'https://keiteldog.github.io/n-queens/',
   year: 2020,
   side: 'Frontend',
   type: 'challenge',
