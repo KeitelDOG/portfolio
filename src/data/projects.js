@@ -53,8 +53,8 @@ const megalobiz = {
 
 const opine = {
   id: 2,
-  name: 'Opine - Boundless Opinion',
-  description: '[Project in development]\nA website that allows people to opine on most Web Pages, like Articles, Blogs, Services and Media pages. Built with React Native, React Native Web and NextJS with Responsive Design in mind.',
+  name: 'Cross Medias - Boundless Opinions',
+  description: '[Launching in August 2025]\nA website that allows people to opine on most Web Pages, like Articles, Blogs, Services and Media pages. Built with React Native, React Native Web and NextJS with Responsive Design in mind.',
   thumbnail: '/images/projects/2/thumbnail.png',
   images: [
     '/images/projects/2/opine-home.png',
@@ -74,6 +74,7 @@ const opine = {
   stack: [7, 8, 9, 11, 201],
   skillIds: [1, 8, 6, 7, 9, 11, 101, 102, 107, 108, 201, 206, 207, 301, 302, 303, 304, 309, 109],
   features: [
+    '[Concept and Proof of Concept started in 2021-2022. Implementation started in 2023 in my free time]',
     'Submit and crawl URL to create a unique page for each Link',
     'Follow canonical URL to avoid duplicate links leading to opinions being scattered',
     'URL can be submitted with "Share" option on mobile App.',
@@ -88,8 +89,8 @@ const opine = {
     'Consume Link Feeds',
   ],
   source: 'private',
-  link: 'https://comon.megalobiz-staging.com',
-  year: 2023,
+  link: 'https://crossmedias.co',
+  year: 2024,
   side: 'Full Stack',
   type: 'project',
 };
@@ -127,7 +128,7 @@ const matchstick = {
     'Highlight added stick in green dotted rectangle',
   ],
   source: 'https://github.com/KeitelDOG/matchstick-equation',
-  link: 'https://matchstick.megalobiz-staging.com',
+  link: 'https://keiteldog.github.io/matchstick/',
   year: 2023,
   side: 'Frontend',
   type: 'challenge',

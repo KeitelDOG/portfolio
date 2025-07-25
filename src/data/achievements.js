@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     year: 2003,
-    text: 'Wrote a 3D rotatable Object perspective View on TI-92 Calculator as my first code ever.',
+    text: 'First Code: 3D rotatable Truncated Cube with Perspective View on TI-92 Calculator.',
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ export default [
   {
     id: 5,
     year: 2016,
-    text: 'Launched my first Laravel-PHP Website: Megalobiz.',
+    text: 'Launched my first Website (Laravel-PHP): Megalobiz.',
   },
   {
     id: 6,
@@ -41,7 +41,12 @@ export default [
   },
   {
     id: 9,
-    year: 2023,
-    text: 'Expect to get my first international job.',
+    year: 2024,
+    text: 'Completed my 2nd Website (Node-React-Javascript): Cross Medias',
+  },
+  {
+    id: 10,
+    year: 2025,
+    text: 'Mastered many Top Technics for Database Scaling aiming at Performance.',
   },
 ];
